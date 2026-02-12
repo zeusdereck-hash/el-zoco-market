@@ -367,23 +367,30 @@
         </div>
 
         <div class="modal" id="modalPago">
-            <div class="modal-content">
-                <button class="close-btn" onclick="cerrarModales()">&times;</button>
-                <h2>Pago por Transferencia</h2>
-                <div class="bank-details">
-                    <p><strong>PAYPAL:</strong> http://paypal.me/zeusdereckl</p>
-                    <p><strong>Banco:</strong> MERCADO PAGO</p>
-                    <p><strong>No. de Tarjeta:</strong> 5428780110025319</p>
-                    <p><strong>CLABE:</strong> 7229 6901 0757 9208 39</p>
-                    <p><strong>Link Mercado Pago:</strong> https://link.mercadopago.com.mx/elzocodis</p>
-                    <p><strong>DIMO:</strong> 5580867149</p>
-                    <p><strong>Titular:</strong> Oscar Arturo Marquez Cruz</p>
-                </div>
-                <button class="whatsapp-btn" onclick="enviarPedido()">
-                    <i class="fab fa-whatsapp"></i> Confirmar y enviar comprobante
-                </button>
-            </div>
+    <div class="modal-content">
+        <button class="close-btn" onclick="cerrarModales()">&times;</button>
+        <h2>Finalizar Pago</h2>
+        
+        <div style="text-align: center; margin-bottom: 20px; background: #fff; padding: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <p style="font-weight: bold; color: var(--secondary); margin-bottom: 10px;">Escanea para pagar</p>
+            <img src="img/elzocopay.jpg" alt="QR de Pago El Zoco" style="width: 180px; height: 180px; object-fit: contain; border: 2px solid #eee;">
         </div>
+
+        <div class="bank-details">
+            <p><strong>PAYPAL:</strong> http://paypal.me/zeusdereckl</p>
+            <p><strong>Banco:</strong> MERCADO PAGO</p>
+            <p><strong>No. de Tarjeta:</strong> 5428780110025319</p>
+            <p><strong>CLABE:</strong> 7229 6901 0757 9208 39</p>
+            <p><strong>Link Mercado Pago:</strong> https://link.mercadopago.com.mx/elzocodis</p>
+            <p><strong>DIMO:</strong> 5580867149</p>
+            <p><strong>Titular:</strong> Oscar Arturo Marquez Cruz</p>
+        </div>
+        
+        <button class="whatsapp-btn" onclick="enviarPedido()">
+            <i class="fab fa-whatsapp"></i> Confirmar y enviar comprobante
+        </button>
+    </div>
+</div>
 
         <script>
             let carrito = [];
