@@ -453,7 +453,9 @@
             let totalAcumulado = 0;
 
             function agregarAlCarrito(nombre, precio, event) {
-    // 1. Lógica original
+   const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3');
+    audio.volume = 1;
+    audio.play();
     carrito.push({ nombre, precio });
     document.querySelector('.cart-count').innerText = carrito.length;
 
