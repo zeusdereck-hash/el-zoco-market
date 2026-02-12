@@ -366,26 +366,28 @@
             </div>
         </div>
 
-        <div class="modal" id="modalPago">
-    <div class="modal-content">
+      <div class="modal" id="modalPago">
+    <div class="modal-content" style="max-height: 90vh; overflow-y: auto;">
         <button class="close-btn" onclick="cerrarModales()">&times;</button>
-        <h2>Finalizar Pago</h2>
+        <h2 style="text-align: center; margin-bottom: 15px;">Finalizar Pago</h2>
         
-        <div style="text-align: center; margin-bottom: 20px; background: #fff; padding: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-            <p style="font-weight: bold; color: var(--secondary); margin-bottom: 10px;">Escanea para pagar</p>
-            <img src="img/elzocopay.jpg" alt="QR de Pago El Zoco" style="width: 180px; height: 180px; object-fit: contain; border: 2px solid #eee;">
+        <div style="text-align: center; margin-bottom: 20px; background: #f9f9f9; padding: 15px; border-radius: 12px; border: 1px dashed #ca870b;">
+            <p style="font-weight: bold; color: #2c3e50; margin-bottom: 10px; font-size: 0.9rem;">
+                <i class="fab fa-paypal"></i> Escanea para pagar con PayPal
+            </p>
+            <img src="img/elzocopay.jpeg" alt="QR Pago El Zoco" style="width: 200px; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         </div>
 
-        <div class="bank-details">
-            <p><strong>PAYPAL:</strong> http://paypal.me/zeusdereckl</p>
+        <div class="bank-details" style="font-size: 0.85rem; line-height: 1.4;">
+            <p><strong>PAYPAL:</strong> <a href="http://paypal.me/zeusdereckl" target="_blank" style="color: #3498db;">paypal.me/zeusdereckl</a></p>
             <p><strong>Banco:</strong> MERCADO PAGO</p>
             <p><strong>No. de Tarjeta:</strong> 5428780110025319</p>
             <p><strong>CLABE:</strong> 7229 6901 0757 9208 39</p>
-            <p><strong>Link Mercado Pago:</strong> https://link.mercadopago.com.mx/elzocodis</p>
+            <p><strong>Link Mercado Pago:</strong> <a href="https://link.mercadopago.com.mx/elzocodis" target="_blank" style="color: #3498db;">Pagar aquí</a></p>
             <p><strong>DIMO:</strong> 5580867149</p>
-            <p><strong>Titular:</strong> Oscar Arturo Marquez Cruz</p>
+            <p style="margin-top: 5px; border-top: 1px solid #ddd; pt: 5px;"><strong>Titular:</strong> Oscar Arturo Marquez Cruz</p>
         </div>
-        
+
         <button class="whatsapp-btn" onclick="enviarPedido()">
             <i class="fab fa-whatsapp"></i> Confirmar y enviar comprobante
         </button>
